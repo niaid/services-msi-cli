@@ -23,6 +23,15 @@ Generates a MSI for a Node.js API service
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
@@ -54,7 +63,33 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`services-msi bundle`](#services-msi-bundle)
 * [`services-msi help [COMMAND]`](#services-msi-help-command)
+
+## `services-msi bundle`
+
+Creates an MSI for a Node.js API project. Requires Windows and the http://wixtoolset.org/ toolchain installed.
+
+```
+USAGE
+  $ services-msi bundle
+
+OPTIONS
+  -h, --help           show CLI help
+  -i, --ini=ini        Path to INI format configuration file for customizing placeholder values
+  -o, --output=output  [default: C:\dev\Hedwig\services-msi-cli] Installer output folder
+  -s, --source=source  [default: C:\dev\Hedwig\services-msi-cli] Project source folder
+
+EXAMPLES
+  $ services-msi bundle
+  $ services-msi bundle --output /output/dir --source /my/node/project
+  Generates "<project-name>-<project-version>.msi"
+  $ services-msi bundle --ini path/to/config.ini
+  Customizes placeholder values with the given config file. View the 
+  https://github.com/LabShare/services-msi-cli/blob/master/example-config.ini for accepted values.
+```
+
+_See code: [src\commands\bundle.ts](https://github.com/niaid/services-msi-cli/blob/v1.2.1/src\commands\bundle.ts)_
 
 ## `services-msi help [COMMAND]`
 
