@@ -11,11 +11,35 @@ Generates a MSI for a Node.js API service
 [![License](https://img.shields.io/npm/l/@labshare/services-msi-cli.svg)](https://github.com/LabShare/services-msi-cli/blob/master/package.json)
 
 <!-- toc -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
+```sh-session
+$ npm install -g @niaid/services-msi-cli
+$ services-msi COMMAND
+running command...
+$ services-msi (-v|--version|version)
+@niaid/services-msi-cli/1.2.1 win32-x64 node-v12.18.3
+$ services-msi --help [COMMAND]
+USAGE
+  $ services-msi COMMAND
+...
+```
+<!-- usagestop -->
 ```sh-session
 $ npm install -g @labshare/services-msi-cli
 $ services-msi COMMAND
@@ -30,6 +54,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`services-msi help [COMMAND]`](#services-msi-help-command)
+
+## `services-msi help [COMMAND]`
+
+display help for services-msi
+
+```
+USAGE
+  $ services-msi help [COMMAND]
+
+ARGUMENTS
+  COMMAND  command to show help for
+
+OPTIONS
+  --all  see all commands in CLI
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src\commands\help.ts)_
+<!-- commandsstop -->
 * [`services-msi bundle`](#services-msi-bundle)
 * [`services-msi help [COMMAND]`](#services-msi-help-command)
 
